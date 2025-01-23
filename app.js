@@ -13,7 +13,7 @@ app.get('/', (req,res)=>{
 
 app.post('/anuncio', (req, res) => {
     let preferencia = req.body.preferencia;
-    res.cookie('preferencia', preferencia, { maxAge: 24 * 60 * 60 * 1000 }); 
+    res.cookie('preferencia', preferencia, { maxAge: 60 * 1000 }); 
 })
 
 app.listen(8001);
