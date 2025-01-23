@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Página principal</h1>
+    <% if(oferta) { %>
+        <h1>ofertas en <%= oferta %>
+        </h1>
+        <% }%>
+            <form action="/anuncio" method="post">
+                <input type="radio" id="zapatillas" name="preferencia" value="Zapatillas" required />
+                <label for="zapatillas">Zapatillas</label><br />
+                <input type="radio" id="pantalones" name="preferencia" value="Pantalones" />
+                <label for="pantalones">Pantalones</label><br />
+                <input type="radio" id="tablets" name="preferencia" value="Tablets" />
+                <label for="tablets">Tablets</label><br />
+                <button type="submit">Enviar</button>
+
+            </form>
+</body>
+
+</html>
